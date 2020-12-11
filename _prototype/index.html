@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fr Pro</title>
+    <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="screen login screen-display">
+
+    <div class="container">
+        <header>
+        </header>
+
+        <main>
+
+            <section class="login">
+                <h1>Bienvenue sur français professionnel</h1>
+                <h1 class="hide">Bonjour,<br>
+                    John Smith
+                    <br><br>
+                    Bienvenue nous allons commencer</h1>
+                <form id="login" method="post" action="?action=log"> 
+                    <label for="login" class="placeholder">Adresse e-mail <span class="alert hide">(Veuillez indiquez votre adresse e-mail)</span></label>
+                    <input autocomplete="off" type="text" name="login" required="required">
+                    <button>Valider</button>
+                </form>
+                <time class="hide">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </time>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="login">
+                <img src="images/logo-frpro.svg">
+                <img src="images/logo-emploi-lausanne.svg">
+            </div>
+        </footer>
+    </div>
+</div>
+
+
+
+
+<div class="screen menu">
+    
+    <div class="container">
+        <header>
+            <section class="menu">
+                <a class="avatar" href=""></a>
+            </section>
+
+        </header>
+
+        <main>
+
+            <section>
+                <nav data-menu="questionnaire">
+                    <figure>
+                        <img src="images/themes/questionnaire.svg">
+                    </figure>
+                    <ul>
+                        <li>Questionnaires<progress max="100" value="80"></progress></li>
+                    </ul>
+                </nav>
+
+                <nav data-menu="ecouter_repondre">
+                    <figure>
+                        <img src="images/themes/ecouter_repondre.svg">
+                    </figure>
+                    <ul>
+                        <li>Météo<progress max="100" value="40"></progress></li>
+                    </ul>
+                </nav>
+            </section>
+
+        </main>
+
+        <footer>
+        </footer>
+    </div>
+</div>
+
+
+
+<div class="screen submenu">
+    
+    <div class="container">
+
+        <main>
+
+            <section>
+                <nav data-menu="questionnaire" class="hide">
+                    <figure>
+                        <img src="images/themes/questionnaire.svg">
+                    </figure>
+                    <ul>
+                        <li>Questionnaires<progress max="100" value="80"></progress>
+                        
+                            <ul>
+                                <li>Recevoir une informations
+                                    <ol>
+                                        <li class="completed"><a href="exercice.html">Agenda</a></li>
+                                        <li class="completed"><a href="exercice.html">Les nombres</a></li>
+                                        <li class="engaged"><a href="exercice.html">Les combre déclinaison</a></li>
+                                        <li><span>Les nombres v2</span></li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <nav data-menu="ecouter_repondre" class="hide">
+                    <figure>
+                        <img src="images/themes/ecouter_repondre.svg">
+                    </figure>
+                    <ul>
+                        <li>Météo<progress max="100" value="40"></progress>
+                        
+                            <ul>
+                                <li>Recevoir une informations
+                                    <ol>
+                                        <li class="completed"><a href="modules/exercice-meteo.html">Meteo v0</a></li>
+                                        <li class="engaged"><a href="modules/exercice-meteo.html">Meteo v1</a></li>
+                                        <li><span>Meteo v2</span></li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+        </main>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fr Pro</title>
+    <script src="../js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="meteo.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="screen exercice screen-display">
+
+        <div class="container">
+            <header>
+                <progress max="100" value="40"></progress>
+            </header>
+
+            <main>
+                <section class="exercice">
+                    <audio controls>
+                        <source src="../medias/modules/meteo/0120.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="question" id="container">
+
+                        <h1 id="title">Lausanne</h1>
+                    </div>
+
+                    <div class="answers">
+                        <div class="draggable" draggable="true" value="eclair"><img
+                                src="../images/modules/meteo/eclair-soleil.svg">
+                        </div>
+                        <div class="draggable" draggable="true" value="nuage"><img
+                                src="../images/modules/meteo/nuage-soleil.svg"></div>
+                        <div class="draggable" draggable="true" value="nuages"><img
+                                src="../images/modules/meteo/nuages.svg"></div>
+                        <div class="draggable" draggable="true" value="pluie"><img
+                                src="../images/modules/meteo/pluie.svg"></div>
+                        <div class="draggable" draggable="true" value="soleil"><img
+                                src="../images/modules/meteo/soleil.svg"></div>
+                    </div>
+
+                </section>
+
+
+                <section class="exercice hide">
+                    <audio controls>
+                        <source src="../medias/modules/meteo/0120.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="question" id="container">
+
+                        <h1 id="title">Lausanne</h1>
+                    </div>
+
+                    <div class="answers">
+                        <div class="draggable" value="eclair"><img src="../images/modules/meteo/eclair-soleil.svg">
+                        </div>
+                        <div class="draggable" value="nuage"><img src="../images/modules/meteo/nuage-soleil.svg"></div>
+                        <div class="draggable" value="nuages"><img src="../images/modules/meteo/nuages.svg"></div>
+                        <div class="draggable" value="pluie"><img src="../images/modules/meteo/pluie.svg"></div>
+                        <div class="draggable" value="soleil"><img src="../images/modules/meteo/soleil.svg"></div>
+                    </div>
+                </section>
+
+                <!-- 
+                <section class="exercice hide">
+
+                    <div class="question">
+                        <h1>La vangeance est un plat qui se mange...</h1>
+                    </div>
+
+                    <div class="answers">
+                        <button>Froid</button>
+                        <button>Chaud</button>
+                    </div>
+
+                </section>
+
+
+                <section class="result hide">
+
+                    <div class="text">
+                        <h1>Bravo !</h1>
+                    </div>
+
+                    <div class="results">
+                        <span>3/3</span>
+                    </div>
+
+                </section> -->
+            </main>
+
+            <footer>
+                <nav class="swiper">
+                    <div>
+                        <button data-action="next">Suivant</button>
+                        <button data-action="stop">Arrêter</button>
+                    </div>
+                </nav>
+            </footer>
+        </div>
+    </div>
+
+    <script src="meteo.js"></script>
+
+</body>
+
+</html>
